@@ -1,0 +1,95 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GoKo hero — font options</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Cinzel:wght@400;500&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Marcellus&family=Fraunces:ital,opsz,wght@0,9..144,300;1,9..144,300&family=Inter:wght@300;400&family=Jost:wght@300;400&family=Montserrat:wght@300;400&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#efe7d8;color:#2a2420;font-family:Inter,system-ui,sans-serif;font-weight:300}
+header{padding:48px 6vw 24px}
+header h2{font-family:"Cormorant Garamond",serif;font-weight:300;font-size:40px;margin:0 0 8px}
+header p{margin:0;color:#7a6f62;max-width:720px}
+.opt{padding:28px 6vw 56px;border-top:1px solid rgba(42,36,32,.14)}
+.opt__label{display:grid;grid-template-columns:auto auto 1fr;gap:6px 22px;align-items:baseline;margin-bottom:18px}
+.opt__label span{font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:#a67c3d}
+.opt__label strong{font-size:22px;font-weight:400}
+.opt__label em{font-style:normal;color:#7a6f62;font-size:14px}
+.opt__label p{grid-column:1/-1;margin:0;color:#4a423b;font-size:14px;max-width:760px}
+.hero{position:relative;aspect-ratio:16/9;max-height:640px;overflow:hidden;background:#1b1714}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%}
+.shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(27,23,20,.55),rgba(27,23,20,.05) 30%,rgba(27,23,20,.15) 60%,rgba(27,23,20,.95)),linear-gradient(90deg,rgba(27,23,20,.55),rgba(27,23,20,.25) 45%,transparent 70%)}
+.copy{position:absolute;left:5%;top:50%;transform:translateY(-50%);max-width:62%;color:#f2ebdd;font-family:var(--ui),Inter,sans-serif}
+.eyebrow{font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:#c9a56a;margin:0 0 14px}
+h1{font-family:var(--display),serif;font-weight:var(--w);font-size:var(--fs,clamp(48px,7.4vw,112px));line-height:var(--lh,.96);letter-spacing:var(--ls);text-transform:var(--tt,none);margin:0 0 22px}
+h1 i{font-style:italic;color:#e5c992}
+.lede{font-size:clamp(15px,1.3vw,19px);max-width:480px;margin:0 0 26px;text-shadow:0 2px 24px rgba(0,0,0,.8)}
+.btns{display:flex;gap:26px;align-items:center;font-size:12px;letter-spacing:.22em;text-transform:uppercase}
+.btn{background:#c9a56a;color:#1b1714;padding:15px 30px}
+.txt{color:#d9d0be}
+</style></head><body>
+<header><h2>Hero display type: five options</h2><p>Same hero, same copy, same layout. Only the display face (and its paired UI sans) changes. The current build uses Cormorant Garamond.</p></header>
+
+<section class="opt">
+  <div class="opt__label"><span>Option 1</span><strong>Playfair Display</strong><em>+ Inter for UI</em><p>High-contrast Didone-leaning serif. Editorial, Vogue-adjacent. The safest luxury choice.</p></div>
+  <div class="hero" style="--display:'Playfair Display'; --ui:'Inter'; --w:400; --ls:-0.015em; ">
+    <img src="assets/hero-lodge.jpg" alt="">
+    <div class="shade"></div>
+    <div class="copy">
+      <p class="eyebrow">Signature Journey · Southern Africa</p>
+      <h1>The Classic<br>Safari <i>&amp;</i> Falls<br>Experience</h1>
+      <p class="lede">From the thunder of the Zambezi to the hush of a private reserve at dusk. Ten days, three destinations, one unhurried story.</p>
+      <div class="btns"><span class="btn">Begin Your Journey</span><span class="txt">Explore the route</span></div>
+    </div>
+  </div>
+</section>
+<section class="opt">
+  <div class="opt__label"><span>Option 2</span><strong>Cinzel</strong><em>+ Jost for UI</em><p>Roman inscriptional capitals. Reads as heritage and expedition. Title set in caps at a smaller size.</p></div>
+  <div class="hero" style="--display:'Cinzel'; --ui:'Jost'; --w:400; --ls:0.04em; --tt:uppercase; --fs:clamp(44px,6.2vw,92px); --lh:1.08;">
+    <img src="assets/hero-lodge.jpg" alt="">
+    <div class="shade"></div>
+    <div class="copy">
+      <p class="eyebrow">Signature Journey · Southern Africa</p>
+      <h1>The Classic<br>Safari <i>&amp;</i> Falls<br>Experience</h1>
+      <p class="lede">From the thunder of the Zambezi to the hush of a private reserve at dusk. Ten days, three destinations, one unhurried story.</p>
+      <div class="btns"><span class="btn">Begin Your Journey</span><span class="txt">Explore the route</span></div>
+    </div>
+  </div>
+</section>
+<section class="opt">
+  <div class="opt__label"><span>Option 3</span><strong>Bodoni Moda</strong><em>+ Inter for UI</em><p>True Bodoni with optical sizing. Sharpest hairlines of the set, most fashion-house.</p></div>
+  <div class="hero" style="--display:'Bodoni Moda'; --ui:'Inter'; --w:400; --ls:-0.01em; ">
+    <img src="assets/hero-lodge.jpg" alt="">
+    <div class="shade"></div>
+    <div class="copy">
+      <p class="eyebrow">Signature Journey · Southern Africa</p>
+      <h1>The Classic<br>Safari <i>&amp;</i> Falls<br>Experience</h1>
+      <p class="lede">From the thunder of the Zambezi to the hush of a private reserve at dusk. Ten days, three destinations, one unhurried story.</p>
+      <div class="btns"><span class="btn">Begin Your Journey</span><span class="txt">Explore the route</span></div>
+    </div>
+  </div>
+</section>
+<section class="opt">
+  <div class="opt__label"><span>Option 4</span><strong>Marcellus</strong><em>+ Montserrat for UI</em><p>Flared, Trajan-like serif in upper and lower case. Warm and quietly grand, less severe than Cinzel.</p></div>
+  <div class="hero" style="--display:'Marcellus'; --ui:'Montserrat'; --w:400; --ls:0.01em; ">
+    <img src="assets/hero-lodge.jpg" alt="">
+    <div class="shade"></div>
+    <div class="copy">
+      <p class="eyebrow">Signature Journey · Southern Africa</p>
+      <h1>The Classic<br>Safari <i>&amp;</i> Falls<br>Experience</h1>
+      <p class="lede">From the thunder of the Zambezi to the hush of a private reserve at dusk. Ten days, three destinations, one unhurried story.</p>
+      <div class="btns"><span class="btn">Begin Your Journey</span><span class="txt">Explore the route</span></div>
+    </div>
+  </div>
+</section>
+<section class="opt">
+  <div class="opt__label"><span>Option 5</span><strong>Fraunces</strong><em>+ DM Sans for UI</em><p>Soft, slightly wonky old-style with big optical range. Characterful and modern without losing elegance.</p></div>
+  <div class="hero" style="--display:'Fraunces'; --ui:'DM Sans'; --w:300; --ls:-0.02em; ">
+    <img src="assets/hero-lodge.jpg" alt="">
+    <div class="shade"></div>
+    <div class="copy">
+      <p class="eyebrow">Signature Journey · Southern Africa</p>
+      <h1>The Classic<br>Safari <i>&amp;</i> Falls<br>Experience</h1>
+      <p class="lede">From the thunder of the Zambezi to the hush of a private reserve at dusk. Ten days, three destinations, one unhurried story.</p>
+      <div class="btns"><span class="btn">Begin Your Journey</span><span class="txt">Explore the route</span></div>
+    </div>
+  </div>
+</section>
+</body></html>

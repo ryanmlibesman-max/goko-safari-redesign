@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Classic Safari &amp; Falls Experience — GoKo Safari</title>
+  <meta name="description" content="Ten days from the thunder of Victoria Falls to the private reserves of Greater Kruger. A fully personalised luxury safari with kosher meals and Shabbat thoughtfully arranged." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Cinematic intro curtain -->
+  <div class="curtain" id="curtain" aria-hidden="true">
+    <div class="curtain__mark" data-logo="stack"></div>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="#top" aria-label="GoKo Safari home" data-logo="wide"></a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#journey">The Journey</a>
+      <a href="#falls">Victoria Falls</a>
+      <a href="#kruger">Greater Kruger</a>
+      <a href="#itinerary">Itinerary</a>
+      <a href="#kosher">Kosher &amp; Shabbat</a>
+    </nav>
+    <div class="nav__cta">
+      <a class="btn btn--ghost" href="https://wa.me/16102128868" target="_blank" rel="noopener"><svg class="btn__wa" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6a9.4 9.4 0 0 0-8.1 14.1L2.6 21.4l4.9-1.3A9.4 9.4 0 1 0 12 2.6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 7.8c.2-.4.5-.4.8-.4h.5c.2 0 .4 0 .6.4l.8 1.9c.1.2.1.4 0 .6l-.5.7c-.1.2-.2.3 0 .5.4.7 1 1.4 1.7 2 .6.5 1.2.8 1.7 1 .2.1.4.1.5-.1l.7-.8c.2-.2.4-.2.6-.1l1.9.9c.3.1.4.3.4.5 0 .5-.2 1.2-.6 1.6-.5.5-1.2.8-1.9.7-1.6-.2-3.4-1.2-4.9-2.7C9.3 13.1 8.3 11.4 8 9.9c-.1-.8.3-1.6 1-2.1z" fill="currentColor"/></svg>WhatsApp</a>
+      <a class="btn btn--gold" href="#inquire">Inquire</a>
+    </div>
+    <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="#journey">The Journey</a>
+    <a href="#falls">Victoria Falls</a>
+    <a href="#kruger">Greater Kruger</a>
+    <a href="#itinerary">Itinerary</a>
+    <a href="#kosher">Kosher &amp; Shabbat</a>
+    <a href="#inquire" class="mobile-menu__cta">Inquire Now</a>
+  </div>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero" data-film-speed="1">
+      <div class="hero__media">
+        <video class="hero__video" id="heroFilm" muted playsinline preload="auto" poster="assets/hero-lodge.jpg" aria-hidden="true">
+          <source src="assets/hero-dolly.mp4" type="video/mp4" />
+        </video>
+        <canvas class="hero__canvas" id="dolly" aria-hidden="true"></canvas>
+        <img class="hero__img" src="assets/hero-lodge.jpg" alt="The open-sided lounge of a luxury safari lodge at sunset, looking past an infinity pool to an elephant at a distant waterhole" />
+        <div class="hero__vignette"></div>
+      </div>
+      <div class="hero__bars" aria-hidden="true"><span></span><span></span></div>
+
+      <div class="hero__content">
+        <p class="eyebrow reveal">Signature Journey · Southern Africa</p>
+        <h1 class="hero__title">
+          <span class="line"><span>The Classic</span></span>
+          <span class="line"><span>Safari <em>&amp;</em> Falls</span></span>
+          <span class="line"><span>Experience</span></span>
+        </h1>
+        <p class="hero__lede reveal">
+          From the thunder of the Zambezi to the hush of a private reserve at dusk.
+          Ten days, three destinations, one unhurried story.
+        </p>
+        <div class="hero__actions reveal">
+          <a class="btn btn--gold btn--lg" href="#inquire">Begin Your Journey</a>
+          <a class="btn btn--text" href="#journey">
+            <span class="btn__play"></span> Explore the route
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__meta reveal">
+        <div><span class="hero__meta-k">Duration</span><span class="hero__meta-v">10 Days · 9 Nights</span></div>
+        <div><span class="hero__meta-k">Route</span><span class="hero__meta-v">Johannesburg · Victoria Falls · Greater Kruger</span></div>
+        <div><span class="hero__meta-k">Style</span><span class="hero__meta-v">Private · Fully Personalised</span></div>
+        <div><span class="hero__meta-k">Dining</span><span class="hero__meta-v">Kosher &amp; Shabbat Arranged</span></div>
+      </div>
+
+      <p class="hero__caption" id="heroCaption" aria-live="polite"></p>
+      <button class="hero__skip" id="heroSkip" type="button">Skip intro</button>
+      <div class="hero__scroll" aria-hidden="true">
+        <span></span>
+        <small>Scroll</small>
+      </div>
+    </section>
+
+    <!-- ============ STATEMENT ============ -->
+    <section class="statement light">
+      <div class="container">
+        <p class="statement__text split">
+          There are journeys you take, and journeys that take you.
+          This is the second kind — a slow, deliberate passage through
+          two of Africa's most storied landscapes, arranged around you.
+        </p>
+        <div class="statement__stats reveal">
+          <div><strong data-count="10">0</strong><span>Days</span></div>
+          <div><strong data-count="3">0</strong><span>Nights at the Falls</span></div>
+          <div><strong data-count="5">0</strong><span>Nights on Safari</span></div>
+          <div><strong data-count="5">0</strong><span>The Big Five</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ JOURNEY / THREE ACTS ============ -->
+    <section class="journey light" id="journey">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">The Route</p>
+          <h2>A journey in three acts</h2>
+        </header>
+
+        <div class="acts">
+          <article class="act reveal" style="--delay: 0s">
+            <div class="act__media">
+              <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=1200&q=80" alt="A lone acacia tree on the plains at dusk" loading="lazy" />
+            </div>
+            <div class="act__body">
+              <span class="act__num">Act I</span>
+              <h3>Johannesburg</h3>
+              <p class="act__nights">1 night · Arrival</p>
+              <p>Land softly. A private transfer, a luxury hotel, and a first evening to let the time zone catch up with you before the story begins.</p>
+            </div>
+          </article>
+
+          <article class="act reveal" style="--delay: .12s">
+            <div class="act__media">
+              <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=1200&q=80" alt="Golden light over the river valley at sunset" loading="lazy" />
+            </div>
+            <div class="act__body">
+              <span class="act__num">Act II</span>
+              <h3>Victoria Falls</h3>
+              <p class="act__nights">3 nights · Zimbabwe or Zambia</p>
+              <p>The smoke that thunders. Walk the rainforest edge of the falls, drift down the Zambezi at sunset, and if you dare, see it all from the air.</p>
+            </div>
+          </article>
+
+          <article class="act reveal" style="--delay: .24s">
+            <div class="act__media">
+              <img src="https://images.unsplash.com/photo-1535941339077-2dd1c7963098?w=1200&q=80" alt="An elephant crossing open grassland in warm light" loading="lazy" />
+            </div>
+            <div class="act__body">
+              <span class="act__num">Act III</span>
+              <h3>Greater Kruger</h3>
+              <p class="act__nights">5 nights · Private reserve</p>
+              <p>Daily game drives in a private concession, where your guide reads the bush like a script and the Big Five are the cast.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="route" aria-hidden="true">
+          <span class="route__dot"><i>JNB</i></span>
+          <span class="route__line"></span>
+          <span class="route__dot"><i>VFA</i></span>
+          <span class="route__line"></span>
+          <span class="route__dot"><i>KRUGER</i></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CHAPTER: VICTORIA FALLS ============ -->
+    <section class="chapter chapter--falls" id="falls">
+      <div class="chapter__sticky">
+        <div class="chapter__media">
+          <!-- Four images crossfade as the text blocks pass; swap for Victoria Falls photography (see README) -->
+          <img class="chapter__img is-active" data-scene="0" src="https://images.unsplash.com/photo-1549366021-9f761d450615?w=2000&q=80" alt="An elephant emerging from deep green forest" loading="lazy" />
+          <img class="chapter__img" data-scene="1" src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=2000&q=80" alt="Golden light over a river valley at sunset" loading="lazy" />
+          <img class="chapter__img" data-scene="2" src="https://images.unsplash.com/photo-1519659528534-7fd733a832a0?w=2000&q=80" alt="A balloon drifting high over the plains" loading="lazy" />
+          <img class="chapter__img" data-scene="3" src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=2000&q=80" alt="A lone acacia at dusk" loading="lazy" />
+          <div class="mist" aria-hidden="true"><span></span><span></span><span></span></div>
+        </div>
+        <div class="chapter__caption">
+          <span class="eyebrow">Chapter One</span>
+          <h2 class="chapter__title">Mosi‑oa‑Tunya<br /><em>The smoke that thunders</em></h2>
+        </div>
+      </div>
+
+      <div class="chapter__scroll">
+        <div class="chapter__block reveal" data-scene="0">
+          <span class="chapter__index">01</span>
+          <h3>Walk the edge of the falls</h3>
+          <p>A guided walking tour along the rainforest path, on the Zimbabwe or Zambia side. The spray rises a kilometre into the sky. You will feel it before you see it.</p>
+        </div>
+        <div class="chapter__block reveal" data-scene="1">
+          <span class="chapter__index">02</span>
+          <h3>Sunset on the Zambezi</h3>
+          <p>A private sunset or dinner cruise above the falls. Hippos surface, the light turns to brass, and the river does the talking.</p>
+        </div>
+        <div class="chapter__block reveal" data-scene="2">
+          <span class="chapter__index">03</span>
+          <h3>From the air, if you dare</h3>
+          <p>An optional scenic helicopter flight over the gorge, or a zip‑line across it, for those who want the full cinematic wide shot.</p>
+        </div>
+        <div class="chapter__block reveal" data-scene="3">
+          <span class="chapter__index">04</span>
+          <h3>Three nights, well kept</h3>
+          <p>Hand‑picked luxury lodges within reach of the falls, with every meal and transfer arranged so the only decision left is which side of the gorge to see first.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CHAPTER: GREATER KRUGER ============ -->
+    <section class="chapter chapter--kruger" id="kruger">
+      <div class="container">
+        <header class="section-head section-head--split reveal">
+          <div>
+            <p class="eyebrow">Chapter Two</p>
+            <h2>Greater Kruger,<br />in private</h2>
+          </div>
+          <p class="section-head__copy">
+            Five nights inside a private reserve bordering Kruger National Park. No crowds, no fences, off‑road tracking, and night drives under a sky that has never seen a streetlight.
+          </p>
+        </header>
+      </div>
+
+      <div class="gallery-pin">
+      <div class="gallery">
+        <figure class="gallery__item gallery__item--tall reveal">
+          <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=1200&q=80" alt="A male lion walking through morning grass" loading="lazy" />
+          <figcaption><span>Lion</span></figcaption>
+        </figure>
+        <figure class="gallery__item reveal">
+          <img src="https://images.unsplash.com/photo-1456926631375-92c8ce872def?w=1200&q=80" alt="A leopard resting on a fallen branch" loading="lazy" />
+          <figcaption><span>Leopard</span></figcaption>
+        </figure>
+        <figure class="gallery__item reveal">
+          <img src="https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=1200&q=80" alt="Two elephants beneath a pink dawn sky" loading="lazy" />
+          <figcaption><span>Elephant</span></figcaption>
+        </figure>
+        <figure class="gallery__item gallery__item--wide reveal">
+          <img src="https://images.unsplash.com/photo-1528277342758-f1d7613953a2?w=1600&q=80" alt="A herd of buffalo in dust and sunset light" loading="lazy" />
+          <figcaption><span>Buffalo</span></figcaption>
+        </figure>
+        <figure class="gallery__item reveal">
+          <img src="https://images.unsplash.com/photo-1523805009345-7448845a9e53?w=1200&q=80" alt="A giraffe among acacia trees at golden hour" loading="lazy" />
+          <figcaption><span>Giraffe</span></figcaption>
+        </figure>
+        <figure class="gallery__item reveal">
+          <img src="https://images.unsplash.com/photo-1519659528534-7fd733a832a0?w=1200&q=80" alt="A hot air balloon drifting over a herd of zebra" loading="lazy" />
+          <figcaption><span>Beyond the Big Five</span></figcaption>
+        </figure>
+      </div>
+      <div class="gallery__hint" aria-hidden="true"><span></span>Keep scrolling</div>
+      </div>
+
+      <div class="container">
+        <ul class="features reveal">
+          <li>
+            <span class="features__icon">☉</span>
+            <h4>Dawn &amp; dusk drives</h4>
+            <p>Twice daily in an open vehicle with a dedicated guide and tracker.</p>
+          </li>
+          <li>
+            <span class="features__icon">◎</span>
+            <h4>Big Five country</h4>
+            <p>Lion, leopard, elephant, buffalo and rhino share the reserve with you.</p>
+          </li>
+          <li>
+            <span class="features__icon">✦</span>
+            <h4>Birdlife &amp; night skies</h4>
+            <p>Over five hundred bird species by day; the Milky Way, unfiltered, by night.</p>
+          </li>
+          <li>
+            <span class="features__icon">⌂</span>
+            <h4>Hand‑picked lodges</h4>
+            <p>Suites chosen for privacy, setting and a kitchen that can cook for you.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ KOSHER & SHABBAT ============ -->
+    <section class="kosher" id="kosher">
+      <div class="kosher__bg">
+        <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=2000&q=80" alt="" loading="lazy" aria-hidden="true" />
+      </div>
+      <div class="container kosher__inner">
+        <div class="kosher__card reveal">
+          <p class="eyebrow">Thoughtfully Planned</p>
+          <h2>Kosher meals &amp; Shabbat, without compromise</h2>
+          <p>
+            Observance should never mean settling for less. We work with kosher‑certified kitchens
+            and lodges that understand Shabbat, so candle‑lighting happens on time, meals are
+            prepared to your standard, and Saturday unfolds at its own pace, with the bush still
+            right outside your door.
+          </p>
+          <ul class="kosher__list">
+            <li>Kosher‑certified kitchens and supervised meal preparation</li>
+            <li>Shabbat‑aware scheduling for transfers, drives and activities</li>
+            <li>Fully customisable menus for dietary needs and preferences</li>
+            <li>Discreet coordination with each lodge, handled before you arrive</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ITINERARY ============ -->
+    <section class="itinerary light" id="itinerary">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Day by Day</p>
+          <h2>The unfolding</h2>
+          <p class="section-head__note">A sample flow. Every journey is fully personalised, so days, lodges and pacing are shaped around you.</p>
+        </header>
+
+        <div class="days-wrap">
+        <div class="days__rail" aria-hidden="true"><span></span></div>
+        <ol class="days">
+          <li class="day reveal" data-act="Johannesburg">
+            <button class="day__head" aria-expanded="false">
+              <span class="day__num">01</span>
+              <span class="day__title">Arrival in Johannesburg</span>
+              <span class="day__place">Johannesburg</span>
+              <span class="day__plus" aria-hidden="true"></span>
+            </button>
+            <div class="day__body"><div>
+              <p>Met on arrival and transferred privately to your hotel. An evening to rest, dine and reset before the journey north.</p>
+            </div></div>
+          </li>
+          <li class="day reveal" data-act="Victoria Falls">
+            <button class="day__head" aria-expanded="false">
+              <span class="day__num">02</span>
+              <span class="day__title">Flight to Victoria Falls</span>
+              <span class="day__place">Victoria Falls</span>
+              <span class="day__plus" aria-hidden="true"></span>
+            </button>
+            <div class="day__body"><div>
+              <p>A short internal flight and private transfer to your lodge. Settle in, then a first glimpse of the spray on the horizon at sunset.</p>
+            </div></div>
+          </li>
+          <li class="day reveal" data-act="Victoria Falls">
+            <button class="day__head" aria-expanded="false">
+              <span class="day__num">03</span>
+              <span class="day__title">The Falls on foot</span>
+              <span class="day__place">Victoria Falls</span>
+              <span class="day__plus" aria-hidden="true"></span>
+            </button>
+            <div class="day__body"><div>
+              <p>Guided walking tour of the falls along the rainforest path, Zimbabwe or Zambia side. Afternoon at leisure; sunset cruise on the Zambezi.</p>
+            </div></div>
+          </li>
+          <li class="day reveal" data-act="Victoria Falls">
+            <button class="day__head" aria-expanded="false">
+              <span class="day__num">04</span>
+              <span class="day__title">Above the gorge</span>
+              <span class="day__place">Victoria Falls</span>
+              <span class="day__plus" aria-hidden="true"></span>
+            </button>
+            <div class="day__body"><div>
+              <p>Optional helicopter flight or zip‑line over the gorge, or a slower morning by the pool. Dinner cruise or lodge dining, as you prefer.</p>
+            </div></div>
+          </li>
+          <li class="day reveal" data-act="Greater Kruger">
+            <button class="day__head" aria-expanded="false">
+              <span class="day__num">05</span>
+              <span class="day__title">Into the reserve</span>
+              <span class="day__place">Greater Kruger</span>
+              <span class="day__plus" aria-hidden="true"></span>
+            </button>
+            <div class="day__body"><div>
+              <p>Fly to the lowveld and transfer into the private reserve. Arrive in time for your first afternoon game drive and sundowners in the bush.</p>
+            </div></div>
+          </li>
+          <li class="day reveal" data-act="Greater Kruger">
+            <button class="day__head" aria-expanded="false">
+              <span class="day__num">06 – 08</span>
+              <span class="day__title">Safari, twice daily</span>
+              <span class="day__place">Greater Kruger</span>
+              <span class="day__plus" aria-hidden="true"></span>
+            </button>
+            <div class="day__body"><div>
+              <p>Dawn and dusk drives with your guide and tracker, bush walks where permitted, long lunches, and afternoons of stillness between them. Shabbat, when it falls, is arranged around you.</p>
+            </div></div>
+          </li>
+          <li class="day reveal" data-act="Greater Kruger">
+            <button class="day__head" aria-expanded="false">
+              <span class="day__num">09</span>
+              <span class="day__title">The last drive</span>
+              <span class="day__place">Greater Kruger</span>
+              <span class="day__plus" aria-hidden="true"></span>
+            </button>
+            <div class="day__body"><div>
+              <p>One more morning in the bush, a final evening drive, and a farewell dinner under the stars.</p>
+            </div></div>
+          </li>
+          <li class="day reveal" data-act="Departure">
+            <button class="day__head" aria-expanded="false">
+              <span class="day__num">10</span>
+              <span class="day__title">Homeward</span>
+              <span class="day__place">Departure</span>
+              <span class="day__plus" aria-hidden="true"></span>
+            </button>
+            <div class="day__body"><div>
+              <p>Transfer and internal flight to Johannesburg to connect with your international departure.</p>
+            </div></div>
+          </li>
+        </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INCLUSIONS ============ -->
+    <section class="inclusions light">
+      <div class="container inclusions__grid">
+        <div class="inclusions__col reveal">
+          <p class="eyebrow">Included</p>
+          <ul class="tick">
+            <li>Internal flights</li>
+            <li>Luxury hotels and hand‑picked lodges</li>
+            <li>Private transfers throughout</li>
+            <li>Professional guides</li>
+            <li>All meals during your safari stay</li>
+            <li>All specified activities and tours</li>
+            <li>Kosher meal and Shabbat coordination</li>
+          </ul>
+        </div>
+        <div class="inclusions__col reveal">
+          <p class="eyebrow">Not included</p>
+          <ul class="cross">
+            <li>International flights</li>
+            <li>Premium beverages and mini bar</li>
+            <li>Gratuities</li>
+            <li>Laundry, spa treatments and room service</li>
+            <li>Curios and gift purchases</li>
+          </ul>
+        </div>
+        <div class="inclusions__col inclusions__price reveal">
+          <p class="eyebrow">Investment</p>
+          <p class="inclusions__price-v">Fully<br />Personalised</p>
+          <p class="inclusions__price-note">Pricing is built around your dates, lodges, party size and the experiences you choose. Tell us what you have in mind and we will shape a proposal.</p>
+          <a class="btn btn--gold" href="#inquire">Request a Proposal</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ QUOTE ============ -->
+    <section class="quote">
+      <div class="quote__bg">
+        <img src="https://images.unsplash.com/photo-1535941339077-2dd1c7963098?w=2000&q=80" alt="" aria-hidden="true" loading="lazy" />
+      </div>
+      <div class="container">
+        <blockquote class="reveal">
+          <p>“The bush does not perform. It simply continues, and for a few days you are allowed to watch.”</p>
+          <cite>— Notes from a guide, Greater Kruger</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ============ INQUIRE ============ -->
+    <section class="inquire light" id="inquire">
+      <div class="container inquire__grid">
+        <div class="inquire__intro reveal">
+          <p class="eyebrow">Plan Your Safari</p>
+          <h2>Let's begin the conversation</h2>
+          <p>Share a few details and a GoKo specialist will reply with a tailored proposal. Prefer to talk? Message us directly on WhatsApp.</p>
+          <a class="inquire__wa" href="https://wa.me/16102128868" target="_blank" rel="noopener">
+            <span class="inquire__wa-icon" aria-hidden="true"></span>
+            <span>Message on WhatsApp<br /><small>+1 (610) 212‑8868</small></span>
+          </a>
+        </div>
+
+        <form class="form reveal" id="inquiryForm" novalidate>
+          <div class="form__row">
+            <label class="field">
+              <span>Full name</span>
+              <input type="text" name="name" required autocomplete="name" />
+            </label>
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" required autocomplete="email" />
+            </label>
+          </div>
+          <div class="form__row">
+            <label class="field">
+              <span>Preferred travel dates</span>
+              <input type="text" name="dates" placeholder="e.g. Late September 2027" />
+            </label>
+            <label class="field">
+              <span>Travellers</span>
+              <input type="number" name="travellers" min="1" placeholder="2" />
+            </label>
+          </div>
+          <label class="field">
+            <span>Dietary &amp; observance needs</span>
+            <select name="kosher">
+              <option value="">Select</option>
+              <option>Kosher meals and Shabbat arrangements</option>
+              <option>Kosher meals only</option>
+              <option>No special requirements</option>
+              <option>Other — I'll explain below</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Tell us about your journey</span>
+            <textarea name="message" rows="4" placeholder="Occasion, pace, must‑see moments, lodge preferences…"></textarea>
+          </label>
+          <button class="btn btn--gold btn--lg btn--block" type="submit">Send Inquiry</button>
+          <p class="form__fine">We reply personally, usually within one business day.</p>
+          <div class="form__success" id="formSuccess" hidden>
+            <strong>Thank you.</strong> Your inquiry is on its way. We will be in touch shortly.
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <div data-logo="wide" style="height:44px"></div>
+        <p>Private luxury safaris across Southern Africa, personally arranged.</p>
+      </div>
+      <nav class="footer__col" aria-label="Destinations">
+        <h5>Destinations</h5>
+        <a href="#">South Africa</a>
+        <a href="#">Zambia</a>
+        <a href="#">Zimbabwe</a>
+      </nav>
+      <nav class="footer__col" aria-label="Company">
+        <h5>Company</h5>
+        <a href="#">Packages</a>
+        <a href="#">About</a>
+        <a href="#inquire">Plan Your Safari</a>
+      </nav>
+      <nav class="footer__col" aria-label="Connect">
+        <h5>Connect</h5>
+        <a href="https://wa.me/16102128868" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">LinkedIn</a>
+      </nav>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year"></span> GoKo Safari. All rights reserved.</span>
+      <span>gokosafari.com</span>
+    </div>
+  </footer>
+
+  <script type="application/json" id="filmCaptions">[[0.05,0.22,"Ten days. <em>Three destinations.</em>"],[0.26,0.43,"From the thunder <em>of the Zambezi…</em>"],[0.47,0.64,"…to the hush of a private reserve <em>at dusk.</em>"],[0.68,0.85,"One <em>unhurried</em> story."]]</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

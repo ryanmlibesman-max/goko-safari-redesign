@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GoKo Safari — Luxury African Safaris</title>
+  <meta name="description" content="Tailor-made luxury African safaris across South Africa, Zambia and Zimbabwe. Private lodges, expert guides, and kosher travel handled without compromise." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+
+  <div class="curtain" id="curtain" aria-hidden="true">
+    <div class="curtain__mark" data-logo="stack"></div>
+  </div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="index.html" aria-label="GoKo Safari home" data-logo="wide"></a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <div class="has-menu">
+        <a href="#destinations" aria-haspopup="true">Destinations</a>
+        <div class="nav__menu">
+          <a href="#destinations">South Africa</a>
+          <a href="#destinations">Zambia</a>
+          <a href="#destinations">Zimbabwe</a>
+        </div>
+      </div>
+      <a href="#packages">Packages</a>
+      <a href="#about">About</a>
+      <a href="#plan">Plan Your Safari</a>
+    </nav>
+    <div class="nav__cta">
+      <a class="btn btn--ghost" href="https://wa.me/16102128868" target="_blank" rel="noopener"><svg class="btn__wa" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6a9.4 9.4 0 0 0-8.1 14.1L2.6 21.4l4.9-1.3A9.4 9.4 0 1 0 12 2.6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 7.8c.2-.4.5-.4.8-.4h.5c.2 0 .4 0 .6.4l.8 1.9c.1.2.1.4 0 .6l-.5.7c-.1.2-.2.3 0 .5.4.7 1 1.4 1.7 2 .6.5 1.2.8 1.7 1 .2.1.4.1.5-.1l.7-.8c.2-.2.4-.2.6-.1l1.9.9c.3.1.4.3.4.5 0 .5-.2 1.2-.6 1.6-.5.5-1.2.8-1.9.7-1.6-.2-3.4-1.2-4.9-2.7C9.3 13.1 8.3 11.4 8 9.9c-.1-.8.3-1.6 1-2.1z" fill="currentColor"/></svg>WhatsApp</a>
+      <a class="btn btn--gold" href="#plan">Book Now</a>
+    </div>
+    <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="index.html">Home</a>
+    <a href="#destinations">Destinations</a>
+    <div class="mobile-menu__sub">
+      <a href="#destinations">South Africa</a>
+      <a href="#destinations">Zambia</a>
+      <a href="#destinations">Zimbabwe</a>
+    </div>
+    <a href="#packages">Packages</a>
+    <a href="#about">About</a>
+    <a href="#plan" class="mobile-menu__cta">Book Now</a>
+  </div>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero hero--home" id="hero" data-film-speed="1">
+      <div class="hero__media">
+        <video class="hero__video" id="heroFilm" muted playsinline preload="auto" poster="assets/hero-lodge.jpg" aria-hidden="true">
+          <source src="assets/hero-dolly.mp4" type="video/mp4" />
+        </video>
+        <canvas class="hero__canvas" id="dolly" aria-hidden="true"></canvas>
+        <img class="hero__img" src="assets/hero-lodge.jpg" alt="Sunset over the bushveld from the open lounge of a luxury safari lodge" />
+        <div class="hero__vignette"></div>
+      </div>
+      <div class="hero__bars" aria-hidden="true"><span></span><span></span></div>
+
+      <div class="hero__content">
+        <p class="eyebrow reveal">Tailor‑made · Southern &amp; East Africa</p>
+        <h1 class="hero__title">
+          <span class="line"><span>Luxury</span></span>
+          <span class="line"><span>African</span></span>
+          <span class="line"><span>Safaris</span></span>
+        </h1>
+        <p class="hero__sub reveal">Where the untamed wilderness meets luxury.</p>
+        <p class="hero__lede reveal">
+          From private luxury escapes to tailored safari experiences, every GoKo journey is designed for connection, comfort, and wonder.
+        </p>
+        <div class="hero__actions reveal">
+          <a class="btn btn--gold btn--lg" href="#destinations">Explore Destinations</a>
+          <a class="btn btn--text" href="#packages"><span class="btn__play"></span> Tailor‑Made Safaris</a>
+        </div>
+      </div>
+
+      <div class="hero__meta reveal">
+        <div><span class="hero__meta-k">Destinations</span><span class="hero__meta-v">South Africa · Zambia · Zimbabwe</span></div>
+        <div><span class="hero__meta-k">Style</span><span class="hero__meta-v">Private · Fully Personalised</span></div>
+        <div><span class="hero__meta-k">Support</span><span class="hero__meta-v">Teams in South Africa &amp; the USA</span></div>
+        <div><span class="hero__meta-k">Dining</span><span class="hero__meta-v">Kosher &amp; Shabbat Arranged</span></div>
+      </div>
+      <p class="hero__caption" id="heroCaption" aria-live="polite"></p>
+      <button class="hero__skip" id="heroSkip" type="button">Skip intro</button>
+      <div class="hero__scroll" aria-hidden="true"><span></span><small>Scroll</small></div>
+    </section>
+
+    <!-- ============ BEYOND ITINERARIES ============ -->
+    <section class="pillars light" id="about">
+      <div class="container">
+        <header class="section-head section-head--split reveal">
+          <div>
+            <p class="eyebrow">Beyond Itineraries</p>
+            <h2>Tailor‑Made<br />African Journeys</h2>
+          </div>
+          <p class="section-head__copy">A true safari is more than a trip; it is a story you carry forever. With deep local knowledge and precision planning across Southern and East Africa, we design every detail so that all you have to do is be there.</p>
+        </header>
+        <div class="pillars__grid">
+          <article class="pillar reveal" data-n="I" style="--delay:0s">
+            <span class="pillar__icon">◎</span>
+            <h3>Designed for connection</h3>
+            <p>Step away from the noise. Reconnect with wildlife, with landscape, and with the people you came with.</p>
+          </article>
+          <article class="pillar reveal" data-n="II" style="--delay:.12s">
+            <span class="pillar__icon">✦</span>
+            <h3>The essence of comfort</h3>
+            <p>Flights, transfers, lodges and guides handled by local experts, so every leg of the journey simply flows.</p>
+          </article>
+          <article class="pillar reveal" data-n="III" style="--delay:.24s">
+            <span class="pillar__icon">☉</span>
+            <h3>A journey of wonder</h3>
+            <p>Immersive itineraries that put you at the heart of Africa, at the pace and depth you choose.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRAVEL, YOUR WAY ============ -->
+    <section class="ways" id="ways">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Experiences</p>
+          <h2>Travel, Your Way</h2>
+          <p class="section-head__note" style="font-family:var(--serif);font-style:italic;font-size:22px;color:var(--gold-2);">Every journey begins with you.</p>
+        </header>
+        <div class="ways__grid">
+          <a class="way reveal" href="#packages" data-style="honeymoon">
+            <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=1000&q=80" alt="" loading="lazy" />
+            <div class="way__body"><h3>Couples &amp; Honeymoons</h3><p>Romantic escapes that balance luxury with adventure, from candlelit bush dinners to secluded private lodges.</p><span class="way__link">View packages</span></div>
+          </a>
+          <a class="way reveal" href="#packages" data-style="family" style="--delay:.08s">
+            <img src="https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=1000&q=80" alt="" loading="lazy" />
+            <div class="way__body"><h3>Family Adventures</h3><p>Flexible, fun‑filled safaris for every generation, built for adventure, comfort and time together.</p><span class="way__link">View packages</span></div>
+          </a>
+          <a class="way reveal" href="#packages" data-style="group" style="--delay:.16s">
+            <img src="https://images.unsplash.com/photo-1528277342758-f1d7613953a2?w=1000&q=80" alt="" loading="lazy" />
+            <div class="way__body"><h3>Group Travel</h3><p>Perfectly coordinated itineraries for friends, communities, celebrations and companies.</p><span class="way__link">View packages</span></div>
+          </a>
+          <a class="way reveal" href="#packages" data-style="kosher" style="--delay:.24s">
+            <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=1000&q=80" alt="" loading="lazy" />
+            <div class="way__body"><h3>Kosher &amp; Specialised Safaris</h3><p>Seamless kosher travel across Africa. Catering, mashgichim and Shabbat observance meticulously handled by the GoKo team.</p><span class="way__link">View packages</span></div>
+          </a>
+          <a class="way reveal" href="#packages" data-style="corporate" style="--delay:.32s">
+            <img src="https://images.unsplash.com/photo-1523805009345-7448845a9e53?w=1000&q=80" alt="" loading="lazy" />
+            <div class="way__body"><h3>Corporate &amp; Retreats</h3><p>Inspire your team with a retreat that blends connection, culture and conservation.</p><span class="way__link">View packages</span></div>
+          </a>
+          <a class="way reveal" href="#plan" style="--delay:.4s">
+            <img src="https://images.unsplash.com/photo-1519659528534-7fd733a832a0?w=1000&q=80" alt="" loading="lazy" />
+            <div class="way__body"><h3>Private Charter &amp; Signature Journeys</h3><p>Africa by private charter or your own vehicle, ranger and tracker, staying in the continent's most sought‑after lodges.</p><span class="way__link">Tailor‑made safaris</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DESTINATIONS ============ -->
+    <section class="dests light" id="destinations">
+      <div class="container">
+        <header class="section-head section-head--split reveal">
+          <div>
+            <p class="eyebrow">Destinations</p>
+            <h2>Explore Africa, One<br />Destination at a Time</h2>
+          </div>
+          <p class="section-head__copy">From South Africa's modern wilderness to Zambia's timeless charm, our destinations blend iconic wildlife, world‑class lodges and soul‑stirring landscapes.</p>
+        </header>
+        <div class="dests__grid">
+          <article class="dest reveal">
+            <div class="dest__media">
+              <img src="https://images.unsplash.com/photo-1535941339077-2dd1c7963098?w=900&q=80" alt="Elephant on open plains" loading="lazy" />
+            </div>
+            <div class="dest__body">
+              <h3>South Africa</h3>
+              <p class="dest__tag">Coastlines, winelands and the Big Five</p>
+              <ul>
+                <li>Cape Town's iconic Table Mountain</li>
+                <li>Boulders Beach penguin colony</li>
+                <li>Cape Point and Chapman's Peak drive</li>
+                <li>Big Five encounters in the Greater Kruger</li>
+              </ul>
+              <a class="btn btn--gold" href="#packages" data-filter-dest="south-africa">View South Africa Packages</a>
+            </div>
+          </article>
+          <article class="dest reveal" style="--delay:.1s">
+            <div class="dest__media">
+              <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=900&q=80" alt="River valley at sunset" loading="lazy" />
+            </div>
+            <div class="dest__body">
+              <h3>Zambia</h3>
+              <p class="dest__tag">Raw safari country with edge‑of‑the‑falls views</p>
+              <ul>
+                <li>Victoria Falls viewpoints from Zambia</li>
+                <li>Canoeing and boat cruises on the Zambezi</li>
+                <li>Devil's Pool and Livingstone Island (seasonal)</li>
+                <li>Exceptional wildlife sightings</li>
+              </ul>
+              <a class="btn btn--gold" href="#packages" data-filter-dest="zambia">View Zambia Packages</a>
+            </div>
+          </article>
+          <article class="dest reveal" style="--delay:.2s">
+            <div class="dest__media">
+              <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=900&q=80" alt="Acacia at dusk" loading="lazy" />
+            </div>
+            <div class="dest__body">
+              <h3>Zimbabwe</h3>
+              <p class="dest__tag">Home to Victoria Falls and warm hospitality</p>
+              <ul>
+                <li>Victoria Falls, one of the Seven Natural Wonders</li>
+                <li>Sunset cruises on the Zambezi</li>
+                <li>Helicopter flights over the Falls</li>
+                <li>Vibrant local culture</li>
+              </ul>
+              <a class="btn btn--gold" href="#packages" data-filter-dest="zimbabwe">View Zimbabwe Packages</a>
+            </div>
+          </article>
+          <article class="dest dest--soon reveal" style="--delay:.3s">
+            <div class="dest__media">
+              <img src="https://images.unsplash.com/photo-1549366021-9f761d450615?w=900&q=80" alt="Elephant in deep green forest" loading="lazy" />
+              <span class="dest__soon">Coming soon</span>
+            </div>
+            <div class="dest__body">
+              <h3>Botswana</h3>
+              <p class="dest__tag">Untouched wilderness, water‑based safaris, endless skies</p>
+              <ul>
+                <li>Chobe's vast elephant herds</li>
+                <li>Mokoro safaris in the Okavango Delta</li>
+                <li>Exclusive lodges in untouched landscapes</li>
+                <li>Stargazing under clear desert skies</li>
+              </ul>
+              <a class="btn btn--ghost" href="#">Coming Soon</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PACKAGES ============ -->
+    <section class="packages" id="packages">
+      <div class="container">
+        <header class="section-head section-head--split reveal">
+          <div>
+            <p class="eyebrow">Packages</p>
+            <h2>Tailor‑Made<br />Safari Adventures</h2>
+          </div>
+          <p class="section-head__copy">Each GoKo itinerary is a story waiting to be lived, curated with care, authenticity, and just the right touch of adventure. Filter by destination, length and travel style.</p>
+        </header>
+
+        <div class="filters reveal" id="filters">
+          <div class="filter">
+            <label>Destination</label>
+            <div class="filter__chips" data-group="dest">
+              <button class="chip is-on" data-v="all">All</button>
+              <button class="chip" data-v="south-africa">South Africa</button>
+              <button class="chip" data-v="victoria-falls">Victoria Falls</button>
+              <button class="chip" data-v="zambia">Zambia</button>
+              <button class="chip" data-v="zimbabwe">Zimbabwe</button>
+            </div>
+          </div>
+          <div class="filter">
+            <label>Duration</label>
+            <div class="filter__chips" data-group="nights">
+              <button class="chip is-on" data-v="all">Any length</button>
+              <button class="chip" data-v="5-7">5–7 nights</button>
+              <button class="chip" data-v="8-10">8–10 nights</button>
+              <button class="chip" data-v="11+">11+ nights</button>
+            </div>
+          </div>
+          <div class="filter">
+            <label>Safari style</label>
+            <div class="filter__chips" data-group="style">
+              <button class="chip is-on" data-v="all">All travellers</button>
+              <button class="chip" data-v="honeymoon">Honeymoons</button>
+              <button class="chip" data-v="family">Family</button>
+              <button class="chip" data-v="group">Private groups</button>
+              <button class="chip" data-v="corporate">Corporate</button>
+              <button class="chip" data-v="kosher">Kosher</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="packages__grid" id="packageGrid">
+          <article class="pkg reveal" data-dest="victoria-falls zambia zimbabwe south-africa" data-nights="11" data-style="honeymoon family group kosher">
+            <div class="pkg__media"><img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1000&q=80" alt="" loading="lazy" /><span class="pkg__type">Signature Journey</span></div>
+            <div class="pkg__body">
+              <h3>The Iconic Southern Africa Journey</h3>
+              <p class="pkg__route">Victoria Falls · Cape Town · Greater Kruger</p>
+              <div class="pkg__meta"><span>11 Nights</span><span>12 Days</span></div>
+              <a class="btn btn--ghost" href="#">View Itinerary</a>
+            </div>
+          </article>
+          <article class="pkg reveal" data-dest="victoria-falls zambia zimbabwe south-africa" data-nights="9" data-style="honeymoon family kosher">
+            <div class="pkg__media"><img src="assets/hero-lodge.jpg" alt="" loading="lazy" /><span class="pkg__type">Classic Safari</span></div>
+            <div class="pkg__body">
+              <h3>The Classic Safari &amp; Falls Experience</h3>
+              <p class="pkg__route">Victoria Falls · Greater Kruger</p>
+              <div class="pkg__meta"><span>9 Nights</span><span>10 Days</span></div>
+              <a class="btn btn--ghost" href="package-classic-safari-falls.html">View Itinerary</a>
+            </div>
+          </article>
+          <article class="pkg reveal" data-dest="south-africa" data-nights="9" data-style="honeymoon family corporate kosher">
+            <div class="pkg__media"><img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=1000&q=80" alt="" loading="lazy" /><span class="pkg__type">Big Five Escape</span></div>
+            <div class="pkg__body">
+              <h3>The Cape &amp; Big Five Escape</h3>
+              <p class="pkg__route">Cape Town · Madikwe Game Reserve</p>
+              <div class="pkg__meta"><span>9 Nights</span><span>10 Days</span></div>
+              <a class="btn btn--ghost" href="#">View Itinerary</a>
+            </div>
+          </article>
+          <article class="pkg reveal" data-dest="south-africa" data-nights="9" data-style="honeymoon family kosher">
+            <div class="pkg__media"><img src="https://images.unsplash.com/photo-1535941339077-2dd1c7963098?w=1000&q=80" alt="" loading="lazy" /><span class="pkg__type">First‑Time Safari</span></div>
+            <div class="pkg__body">
+              <h3>The Essential South Africa Safari</h3>
+              <p class="pkg__route">Cape Town · Greater Kruger</p>
+              <div class="pkg__meta"><span>9 Nights</span><span>10 Days</span></div>
+              <a class="btn btn--ghost" href="#">View Itinerary</a>
+            </div>
+          </article>
+          <article class="pkg reveal" data-dest="victoria-falls zambia zimbabwe south-africa" data-nights="9" data-style="group kosher">
+            <div class="pkg__media"><img src="https://images.unsplash.com/photo-1528277342758-f1d7613953a2?w=1000&q=80" alt="" loading="lazy" /><span class="pkg__type">Group Safari</span></div>
+            <div class="pkg__body">
+              <h3>Yeshiva Break – Grand Safari</h3>
+              <p class="pkg__route">Victoria Falls · Cape Town · Greater Kruger</p>
+              <div class="pkg__meta"><span>9 Nights</span><span>10 Days</span></div>
+              <a class="btn btn--ghost" href="#">View Itinerary</a>
+            </div>
+          </article>
+          <article class="pkg reveal" data-dest="south-africa" data-nights="7" data-style="group kosher">
+            <div class="pkg__media"><img src="https://images.unsplash.com/photo-1456926631375-92c8ce872def?w=1000&q=80" alt="" loading="lazy" /><span class="pkg__type">Group Safari</span></div>
+            <div class="pkg__body">
+              <h3>Yeshiva Break – Classic Safari</h3>
+              <p class="pkg__route">Cape Town · Greater Kruger</p>
+              <div class="pkg__meta"><span>7 Nights</span><span>8 Days</span></div>
+              <a class="btn btn--ghost" href="#">View Itinerary</a>
+            </div>
+          </article>
+        </div>
+        <p class="packages__empty" id="packagesEmpty">No journeys match that combination yet. Tell us what you have in mind and we will build one.</p>
+        <div class="packages__more reveal"><a class="btn btn--gold btn--lg" href="#plan">Explore Packages</a></div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="reviews" id="reviews">
+      <div class="reviews__bg"><img src="https://images.unsplash.com/photo-1523805009345-7448845a9e53?w=2000&q=80" alt="" aria-hidden="true" loading="lazy" /></div>
+      <div class="container">
+        <header class="section-head reveal" style="text-align:center; margin-inline:auto;">
+          <p class="eyebrow">In Their Words</p>
+          <h2>Once‑in‑a‑lifetime, every time</h2>
+        </header>
+        <div class="slider reveal" id="reviewSlider">
+          <div class="reviews__stars" aria-label="Five stars">★★★★★</div>
+          <div class="slider__track">
+            <div class="slide is-active">
+              <p>“Every single detail was planned meticulously. Plentiful kosher meals in some of the most remote places in the world, and our children had the most amazing time.”</p>
+              <cite>Deborah Rosenfeld</cite>
+              <a href="https://www.google.com/search?q=GoKo+Safari+reviews" target="_blank" rel="noopener">Read the full review on Google</a>
+            </div>
+            <div class="slide">
+              <p>“Kosher travel expertise, constant communication and food that was genuinely excellent. The game drives were everything we hoped for. I'd give them ten stars if I could.”</p>
+              <cite>Peretz Chein</cite>
+              <a href="https://www.google.com/search?q=GoKo+Safari+reviews" target="_blank" rel="noopener">Read the full review on Google</a>
+            </div>
+            <div class="slide">
+              <p>“Exceptional accommodations, wonderful food and drivers who knew everything. My only regret is not bringing the whole family.”</p>
+              <cite>Lisa Stein</cite>
+              <a href="https://www.google.com/search?q=GoKo+Safari+reviews" target="_blank" rel="noopener">Read the full review on Google</a>
+            </div>
+            <div class="slide">
+              <p>“Consultations with the whole family, kosher standards and babysitting handled, an on‑site mashgiach, and problems solved before we noticed them. Highly recommended.”</p>
+              <cite>Cameron Isen</cite>
+              <a href="https://www.google.com/search?q=GoKo+Safari+reviews" target="_blank" rel="noopener">Read the full review on Google</a>
+            </div>
+            <div class="slide">
+              <p>“The GoKo team went above and beyond. Our safari was beyond anything we could have anticipated.”</p>
+              <cite>Jonathan Kirschner</cite>
+              <a href="https://www.google.com/search?q=GoKo+Safari+reviews" target="_blank" rel="noopener">Read the full review on Google</a>
+            </div>
+            <div class="slide">
+              <p>“The best trip of our lives. Magnificent accommodations, delicious catered food, and a Kruger safari that was simply perfect. We won't book anything without GoKo.”</p>
+              <cite>Dr. Lynn Klein &amp; Dr. David Weiner</cite>
+              <a href="https://www.google.com/search?q=GoKo+Safari+reviews" target="_blank" rel="noopener">Read the full review on Google</a>
+            </div>
+          </div>
+          <div class="slider__nav">
+            <button class="slider__btn" data-dir="-1" aria-label="Previous review">←</button>
+            <div class="slider__dots" id="reviewDots"></div>
+            <button class="slider__btn" data-dir="1" aria-label="Next review">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PLAN YOUR SAFARI ============ -->
+    <section class="plan light" id="plan">
+      <div class="container plan__grid">
+        <div class="plan__intro reveal">
+          <p class="eyebrow">Plan Your Safari</p>
+          <h2>Your journey starts here</h2>
+          <p>Whether you're planning a luxury safari in South Africa or a bespoke Kosher safari, we're here to make it seamless. Tell us a little about your dream trip and we'll tailor every detail, from your lodge and guides to your meals and pace.</p>
+          <div class="plan__contact">
+            <a href="https://wa.me/16102128868" target="_blank" rel="noopener"><span class="plan__ic">W</span><span>Message on WhatsApp<br /><small>+1 (610) 212‑8868</small></span></a>
+            <a href="mailto:info@gokosafari.com"><span class="plan__ic">@</span><span>Email the team<br /><small>info@gokosafari.com</small></span></a>
+          </div>
+        </div>
+
+        <form class="form reveal" id="planForm" novalidate>
+          <div class="form__group" style="border-top:0; padding-top:0;">
+            <p class="eyebrow">Contact</p>
+            <div class="form__row">
+              <label class="field"><span>Full name *</span><input type="text" name="name" required autocomplete="name" /></label>
+              <label class="field"><span>Email address *</span><input type="email" name="email" required autocomplete="email" /></label>
+            </div>
+            <div class="form__row" style="margin-top:22px;">
+              <label class="field"><span>Contact number</span><input type="tel" name="phone" autocomplete="tel" /></label>
+              <div class="field"><span>Preferred contact method</span>
+                <div class="radios" style="padding-top:12px;">
+                  <label><input type="radio" name="contact" value="Email" checked /> Email</label>
+                  <label><input type="radio" name="contact" value="WhatsApp" /> WhatsApp</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form__group">
+            <p class="eyebrow">Travel details</p>
+            <div class="form__row">
+              <label class="field"><span>When are you planning to travel?</span><input type="date" name="date" /></label>
+              <label class="field"><span>Total days available</span><input type="number" name="days" min="1" placeholder="10" /></label>
+            </div>
+            <div class="form__row" style="margin-top:22px;">
+              <label class="field"><span>How many people are travelling?</span><input type="number" name="people" min="1" placeholder="2" /></label>
+              <label class="field"><span>Budget in mind (optional)</span><input type="text" name="budget" placeholder="e.g. USD 15,000 per person" /></label>
+            </div>
+          </div>
+
+          <div class="form__group">
+            <p class="eyebrow">Interested in a particular package?</p>
+            <div class="checks">
+              <label><input type="checkbox" name="pkg" value="The Essential South Africa Safari" /> The Essential South Africa Safari</label>
+              <label><input type="checkbox" name="pkg" value="The Cape & Big Five Escape" /> The Cape &amp; Big Five Escape</label>
+              <label><input type="checkbox" name="pkg" value="The Classic Safari & Falls Experience" /> The Classic Safari &amp; Falls Experience</label>
+              <label><input type="checkbox" name="pkg" value="The Iconic Southern Africa Journey" /> The Iconic Southern Africa Journey</label>
+              <label><input type="checkbox" name="pkg" value="Yeshiva Break – Classic" /> Yeshiva Break – Classic</label>
+              <label><input type="checkbox" name="pkg" value="Yeshiva Break – Grand" /> Yeshiva Break – Grand</label>
+              <label><input type="checkbox" name="pkg" value="Fixed Departure Safari" /> Fixed Departure Safari</label>
+            </div>
+          </div>
+
+          <div class="form__group">
+            <label class="field"><span>Anything else you would like to add?</span><textarea name="message" rows="4" placeholder="Occasion, pace, dietary or observance needs, must‑see moments…"></textarea></label>
+          </div>
+
+          <button class="btn btn--gold btn--lg btn--block" type="submit">Start Planning Your Safari</button>
+          <p class="form__fine">We reply personally, usually within one business day.</p>
+          <div class="form__success" id="formSuccess" hidden><strong>Thank you.</strong> Your inquiry is on its way. We will be in touch shortly.</div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__grid footer__grid--5">
+      <div class="footer__brand">
+        <div data-logo="wide" style="height:44px"></div>
+        <p>Luxury African safaris without compromise. Teams in South Africa and the USA, with you around the clock.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">ig</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="https://wa.me/16102128868" target="_blank" rel="noopener" aria-label="WhatsApp">wa</a>
+        </div>
+      </div>
+      <nav class="footer__col" aria-label="About GoKo">
+        <h5>About GoKo</h5>
+        <a href="#about">Meet Your Safari Experts</a>
+        <a href="#plan">Connect with Us</a>
+      </nav>
+      <nav class="footer__col" aria-label="Explore packages">
+        <h5>Explore Packages</h5>
+        <a href="#packages">All Packages</a>
+        <a href="#packages">The Cape &amp; Big Five Escape</a>
+        <a href="#packages">The Essential South Africa Safari</a>
+        <a href="package-classic-safari-falls.html">The Classic Safari &amp; Falls Experience</a>
+        <a href="#packages">The Iconic Southern Africa Journey</a>
+      </nav>
+      <nav class="footer__col" aria-label="Destinations">
+        <h5>Destinations</h5>
+        <a href="#destinations">All Destinations</a>
+        <a href="#destinations">South Africa</a>
+        <a href="#destinations">Zambia</a>
+        <a href="#destinations">Zimbabwe</a>
+      </nav>
+      <nav class="footer__col" aria-label="Plan and connect">
+        <h5>Plan &amp; Connect</h5>
+        <a href="#plan">Start Planning Your Safari</a>
+        <a href="#plan">Inquire Now</a>
+        <a href="#">Terms &amp; Conditions</a>
+      </nav>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year"></span> GoKo Safari. All rights reserved.</span>
+      <span class="footer__legal"><a href="#">Privacy Policy</a><a href="#">Cookie Policy</a></span>
+    </div>
+  </footer>
+
+
+  <!-- ============ MODAL ============ -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal__card">
+      <button class="modal__close" id="modalClose" aria-label="Close">×</button>
+      <div class="modal__media"><img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1200&q=80" alt="" /></div>
+      <div class="modal__body">
+        <p class="eyebrow">Fixed Departure</p>
+        <h2 id="modalTitle">Africa is calling</h2>
+        <p class="modal__route">Victoria Falls · Cape Town · Greater Kruger</p>
+        <p class="modal__dates">17 – 27 August 2026 · 10 unforgettable days</p>
+        <p>Thundering Victoria Falls, the icons of Cape Town and the Winelands, a penguin colony, and unforgettable Big Five game viewing in the Greater Kruger.</p>
+        <a class="btn btn--gold" href="#packages" id="modalCta">View the Journey</a>
+      </div>
+    </div>
+  </div>
+
+  <script type="application/json" id="filmCaptions">[[0.05,0.22,"Where the untamed wilderness <em>meets luxury.</em>"],[0.26,0.43,"Private lodges. Expert guides. <em>Every detail handled.</em>"],[0.47,0.64,"Kosher meals and Shabbat, <em>meticulously arranged.</em>"],[0.68,0.85,"Tailor‑made journeys across <em>Southern &amp; East Africa.</em>"]]</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+  <script src="home.js"></script>
+</body>
+</html>
