@@ -84,7 +84,17 @@
       modal.classList.remove("is-open"); modal.setAttribute("aria-hidden", "true");
       try { sessionStorage.setItem(KEY, "1"); } catch (e) {}
     };
-    if (!seen) setTimeout(open, 9000);
+    // Wait until the visitor is halfway down the page, so it never covers the hero video.
+    if (!seen) {
+      const onScroll = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        if (scrollable > 0 && window.scrollY >= scrollable / 2) {
+          window.removeEventListener("scroll", onScroll);
+          open();
+        }
+      };
+      window.addEventListener("scroll", onScroll, { passive: true });
+    }
     $("#modalClose").addEventListener("click", close);
     $("#modalCta").addEventListener("click", close);
     modal.addEventListener("click", (e) => { if (e.target === modal) close(); });
